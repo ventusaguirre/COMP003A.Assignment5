@@ -13,6 +13,11 @@
             Console.WriteLine($"\nYour name is {name} and your favorite number is {a}.\n");
         }
 
+        static int CalculateValue(int a)
+        {
+            return (a * 3);
+        }
+
         static void Main(string[] args)
         {
 
@@ -27,7 +32,9 @@
 
             UserInfo(name, a);
 
-          
+            Console.WriteLine($"Calculated value: {CalculateValue(a)}");
+
+
 
         }
     }
