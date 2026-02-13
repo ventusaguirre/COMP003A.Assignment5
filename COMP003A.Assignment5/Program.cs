@@ -4,22 +4,30 @@
     {
         static void WelcomeMessage()
         {
-            Console.WriteLine("Welcome to Coding Assignment #5!");
+            Console.WriteLine("Welcome to Coding Assignment #5!\n");
         }
 
 
-        static void UserInfo(string name, int number)
+        static void UserInfo(string name, int a)
         {
-            Console.WriteLine("Enter your name: ");
+            Console.WriteLine($"\nYour name is {name} and your favorite number is {a}.\n");
         }
 
         static void Main(string[] args)
         {
-            string name = Console.ReadLine();
-            int number = Console.ReadLine();
 
             WelcomeMessage();
-            UserInfo();
+
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Enter your favorite number: ");
+            string number = Console.ReadLine();
+            int a = int.Parse(number);
+
+            UserInfo(name, a);
+
+          
 
         }
     }
