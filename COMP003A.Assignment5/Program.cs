@@ -32,7 +32,13 @@
 
             UserInfo(name, a);
 
-            Console.WriteLine($"Calculated value: {CalculateValue(a)}");
+            int b = CalculateValue(a);
+
+            Console.WriteLine($"Calculated value: {b}");
+
+            if (b < 50) {  Console.WriteLine("The result is less than 50."); }
+            else { Console.WriteLine("The result is greater than or equal to 50."); }
+
 
 
 
